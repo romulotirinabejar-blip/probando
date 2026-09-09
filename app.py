@@ -14,7 +14,7 @@ if not api_key:
 
 # Configurar el modelo con tu clave
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel("gemini-1.5-flash-latest")
+model = genai.GenerativeModel("gemini-pro")
 # Inicializar el historial de conversación en la sesión
 if "messages" not in st.session_state:
     st.session_state.messages = []
